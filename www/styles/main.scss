@@ -3,7 +3,7 @@ $primary-color: #325666;
 $secondary-color-dark: #B1ac8c;
 $secondary-color-light: #678894;
 $bg-color: #f6f6f6;
-$text-color: #ffffff;
+$text-color: #325666;
 $accent-color: #e8872e;
 $main-font: 'Open+Sans', sans-serif;
 $head-font: 'Poppins', serif;
@@ -23,7 +23,7 @@ body{
 }
 
 .nav-container{
-  background-color: $primary-color;
+  background-color: $bg-color;
   width: 100%;
   box-shadow: 0px 3px 3px #1e1e1e;
   padding: 0;
@@ -33,17 +33,17 @@ body{
 }
 
 .logo{
-  width: 300px;
+  width: 400px;
   display: inline-block;
   padding: 0;
     img{
-      width: 100%;
+      display: inline-block;
     }
   }
 
 #nav-main{
-  width:100%;
-  background-color: $primary-color;
+  width:50%;
+  background-color: $bg-color;
   display: inline-block;
   padding: 0;
   z-index: 99;
@@ -85,7 +85,6 @@ body{
 
 .parallax {
     /* The image used */
-    background-image: url("http://dummyimage.com/1000x700/4d494d/686a82.gif&text=placeholder+image");
 
     /* Set a specific height */
     min-height: 700px;
@@ -98,6 +97,7 @@ body{
 
     padding:112px 0px 0px 0px;
     z-index: -5;
+    transition: background 1s linear;
 }
 
 hr {
@@ -121,22 +121,23 @@ hr {
   margin-left: 0px;
 
 
-  h1 h2{
-    text-align: center;
-    font-family: $head-font;
 
-  }
 
   p{
     font-family: $main-font;
   }
 }
 
+h1 h2{
+    text-align: center;
+    font-family: $head-font;
+    color: $primary-color;
+  }
 
 #nav-trigger{
   display:none;
   float: right;
-  padding: 40px 40px 0px 0px;
+  padding: 70px 70px 0px 0px;
 }
 nav#nav-mobile {
   position: relative;
@@ -153,12 +154,15 @@ nav#nav-mobile {
     margin-left: auto;
     margin-right: auto;
     text-align: right;
-    padding-right: 15px;
-    background-color: $primary-color;
+
   }
 
   nav#nav-mobile li {
     display: block;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: $bg-color;
   }
     nav#nav-mobile li:last-child {
       border-bottom: none;
@@ -167,15 +171,22 @@ nav#nav-mobile {
   nav#nav-mobile a {
     display: block;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    color: $primary-color;
     }
     nav#nav-mobile a:hover {
+      background-color: $accent-color;
+      color: #fff;
+      text-decoration: none;
+    }
+    nav#nav-mobile li:hover {
       background-color: $accent-color;
       color: #fff;
     }
 
 
-@media all and (max-width: 900px) {
+
+@media all and (max-width: 1200px) {
   #nav-trigger {
     display: block; }
 
