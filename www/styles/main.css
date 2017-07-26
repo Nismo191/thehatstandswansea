@@ -148,9 +148,7 @@ nav#nav-mobile li:hover {
   background-color: #325666; }
 
 .social-btns {
-  text-align: center;
-  display: inline-block;
-  margin: 25px 25px 25px 25px; }
+  text-align: center; }
   .social-btns h2 {
     color: #678894; }
   .social-btns .btn {
