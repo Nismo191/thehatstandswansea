@@ -77,7 +77,6 @@ hr {
   background-color: #f6f6f6;
   overflow-y: hidden;
   width: 100%;
-  box-shadow: 0px 3px 3px #1e1e1e;
   padding: 0;
   z-index: 99;
   margin-left: 0px; }
@@ -143,5 +142,23 @@ nav#nav-mobile li:hover {
 
   nav#nav-mobile {
     display: block; } }
+.footer {
+  margin-top: 25px;
+  height: 200px;
+  background-color: #325666; }
+
+.social-btns {
+  text-align: center;
+  display: inline-block;
+  margin: 25px 25px 25px 25px; }
+  .social-btns h2 {
+    color: #678894; }
+  .social-btns .btn {
+    margin: 10px; }
+
+.footer-base {
+  height: 50px;
+  background-color: #678894;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
